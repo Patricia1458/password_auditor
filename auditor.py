@@ -290,9 +290,9 @@ def audit_password(password: str, check_online: bool = True):
         if breached is None:
             print("API unavailable — skipped")
         elif breached:
-            print(f"\n  ⛔ BREACHED — found {count:,} times in known data breaches!")
+            print(f"\n   BREACHED — found {count:,} times in known data breaches!")
         else:
-            print("✅ Not found in known breaches")
+            print(" Not found in known breaches")
 
     # Crack time
     print("\n──────────────────────────────────────────────────────────")
@@ -306,7 +306,7 @@ def audit_password(password: str, check_online: bool = True):
     print("  SECURITY ISSUES DETECTED")
     print("──────────────────────────────────────────────────────────")
     if not patterns:
-        print("  ✅ No major issues detected.")
+        print("  No major issues detected.")
     else:
         icons = {"CRITICAL": "⛔", "HIGH": "🔴", "MEDIUM": "🟡", "LOW": "🟢"}
         for severity, issue in patterns:
@@ -396,7 +396,7 @@ def main():
         print(f"  Strong (20) : {generate_password(20, 'mixed')}")
         print()
     else:
-        print("\n  Stay secure! 🔐\n")
+        print("\n  Stay secure! \n")
 
 
 if __name__ == "__main__":

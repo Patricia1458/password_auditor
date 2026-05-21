@@ -1,4 +1,5 @@
-Password auditor readme · MDCopy
+Password auditor  
+
 Password Security Auditor
 A Python tool that performs deep security analysis on passwords — detecting weak patterns, estimating crack times, checking breach databases, and generating cryptographically secure alternatives. Built with zero external dependencies.
 
